@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci series</title>
+</head>
+<body>
+    <script>
+         n=prompt("enter a number");
+        console.log(n);
+         var a=0;
+           var b=1;
+           var c=0;
+           for(var i=0;i<n;i++){
+               c=a+b;
+               a=b;
+               b=c;
+               document.write(c+" ");
+           }
+           
+    </script>
+</body>
+</html>
