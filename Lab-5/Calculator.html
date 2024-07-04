@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>  
+    <form>
+        <div class="Calculator">
+            <input type="text" name="AnswerPanel" id="answer">
+            <div class="buttons">
+                <div>
+                    <button type="button" id="AC" onclick="allClear()">AC</button>
+                    <button type="button" id="C" onclick="cls()">C</button>
+                </div>
+                <div>
+                    <button type="button" id="seven" onclick="display('7')">7</button>
+                    <button type="button" id="eight" onclick="display('8')">8</button>
+                    <button type="button" id="nine" onclick="display('9')">9</button>
+                    <button type="button" id="multiplication" onclick="display('*')">x</button>
+                </div>
+                <div>
+                    <button type="button" id="four" onclick="display('4')">4</button>
+                    <button type="button" id="five" onclick="display('5')">5</button>
+                    <button type="button" id="six" onclick="display('6')">6</button>
+                    <button type="button" id="substraction" onclick="display('-')">-</button>
+                </div>
+                <div>
+                    <button type="button" id="one" onclick="display('1')">1</button>
+                    <button type="button" id="two" onclick="display('2')">2</button>
+                    <button type="button" id="three" onclick="display('3')">3</button>
+                    <button type="button" id="addition" onclick="display('+')">+</button>
+                </div>
+                <div>
+                    <button type="button" id="division" onclick="display('/')">/</button>
+                    <button type="button" id="zero" onclick="display('0')">0</button>
+                    <button type="button" id="dot" onclick="display('.')">.</button>
+                    <button type="button" id="equal to" onclick="ans()">=</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>  
+        function display(value)
+        {
+            answer.value += value;
+        }
+        function cls()
+        {
+            console.log(answer.value);
+            answer.value = answer.value.slice(0,-1);
+            
+        }
+
+        function allClear()
+        {
+            answer.value = "";
+            console.log(answer.value);
+        }
+        function ans()
+        {
+            try 
+            {
+                answer.value = eval(answer.value);
+            } catch (e) 
+            {
+                answer.value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>
