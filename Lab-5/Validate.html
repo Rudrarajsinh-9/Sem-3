@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5_4</title>
+</head>
+<body>
+   <div>
+    <form id="Form">
+        <div>
+            Username: 
+            <input type="text" placeholder="Enter Your Username" id="user">
+        </div>
+        <div>
+            Password:
+            <input type="text" placeholder="Enter Your Password" id="Password">
+        </div>
+        <div>
+            Re-Enter Password:
+            <input type="text" placeholder="Re-Enter Your Password" id="Repeat-pass">
+        </div>
+        <div>
+            Bithdate:
+            <input type="date" placeholder="Enter Your Bithdate" id="Age">
+        </div>
+        <div>
+            Enrollment Number:
+            <input type="number" placeholder="Enter Your Enrollment Number" id="Enroll">
+        </div>
+        <div>
+            E-mail: 
+            <input type="email" placeholder="Enter Your E-mail" id="e-mail">
+        </div>
+    </form>
+  </div>
+  <script>
+    var user = document.getElementById("Username").value;
+	var pass = document.getElementById("Password").value;
+	var repeat = document.getElementById("Repeat").value;
+	var age = document.getElementById("Age").value;
+	var enroll = document.getElementById("Enroll").value;
+	var email = document.getElementById("Email").value;
+	var error = document.getElementById("ErrorMessage");
+
+
+    userForm.addEventListener ("Submit", function(e)
+    {
+        e.preventDefault();
+        validate();
+    });
+
+    function validate()
+    {
+        if(user === "")
+        {
+			error.innerHTML += "Please enter Username";
+			return false;
+		}
+		else if(user.length < 8)
+        {
+			error.innerHTML += "Invalid Username";
+			return false;
+		}
+        pass_pattern = /^(?=.*\d)(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,12}$/;
+		if(pass === "")
+        {
+			error.innerHTML += "Please Enter Password";
+			return false;
+		}
+		else if((pass.length<8 || pass.length>12) && !pass_pattern.test(pass))
+        {
+			error.innerHTML += "Invalid Password";
+			return false;
+        }
+        if(repeat === "")
+        {
+			error.innerHTML += "Please Reenter Password";
+			return false; 
+		}
+		else if(pass != repeat)
+        {
+			error.innerHTML += "Invalid Repeat Password";
+			return false;
+		}
+    }    
+  </script>
+</body>
+</html>
