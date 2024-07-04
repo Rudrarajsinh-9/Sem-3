@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facultie</title>
+</head>
+<body>
+    <script>
+  let Faculties =
+        [
+  {
+    "NAME": "Leroy Collier",
+    "AGE": 39338,
+    "COLLAGE": "ascii_general_ci",
+    "id": "1"
+  },
+  {
+    "NAME": "Kelly Hilll",
+    "AGE": 93163,
+    "COLLAGE": "utf8_unicode_ci",
+    "id": "2"
+  },
+  {
+    "NAME": "Marilyn Hartmann",
+    "AGE": 51659,
+    "COLLAGE": "cp1250_bin",
+    "id": "3"
+  },
+  {
+    "NAME": "Tracy McClure",
+    "AGE": 69886,
+    "COLLAGE": "utf8_bin",
+    "id": "4"
+  },
+  {
+    "NAME": "Van Prohaska",
+    "AGE": 54811,
+    "COLLAGE": "utf8_bin",
+    "id": "5"
+  },
+  {
+    "NAME": "Bobby Grimes",
+    "AGE": 21883,
+    "COLLAGE": "cp1250_general_ci",
+    "id": "6"
+  },
+  {
+    "NAME": "Curtis Langworth",
+    "AGE": 27028,
+    "COLLAGE": "cp1250_bin",
+    "id": "7"
+  },
+  {
+    "NAME": "Lindsay Cassin",
+    "AGE": 95498,
+    "COLLAGE": "utf8_general_ci",
+    "id": "8"
+  },
+  {
+    "NAME": "Richard Hane",
+    "AGE": 23940,
+    "COLLAGE": "cp1250_bin",
+    "id": "9"
+  },
+  {
+    "NAME": "Eloise McLaughlin",
+    "AGE": 94268,
+    "COLLAGE": "cp1250_bin",
+    "id": "10"
+  }
+]
+document.write("<table border=1>");
+	for(let i=0;i<Faculties.length;i++)
+    {
+			document.write("<tr>");
+			document.write("<td>"+Faculties[i].NAME+"</td>");
+			document.write("<td>"+Faculties[i].AGE+"</td>");
+			document.write("<td>"+Faculties[i].COLLAGE+"</td>");
+            document.write("<td>"+Faculties[i].id+"</td>");
+			document.write("</tr>");
+	}
+    </script>
+</body>
+</html>

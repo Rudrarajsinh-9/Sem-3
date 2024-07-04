@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+<body>
+    <script>
+        let Students =
+        [
+  {
+    "NAME": "Hubert Greenfelder",
+    "AGE": 69871,
+    "GENDER": "Trans female",
+    "id": "1"
+  },
+  {
+    "NAME": "Miss Margie Upton",
+    "AGE": 83410,
+    "GENDER": "Genderqueer",
+    "id": "2"
+  },
+  {
+    "NAME": "Mrs. Jake Vandervort",
+    "AGE": 34355,
+    "GENDER": "Transexual",
+    "id": "3"
+  },
+  {
+    "NAME": "Rafael Stehr",
+    "AGE": 17106,
+    "GENDER": "Intersex man",
+    "id": "4"
+  },
+  {
+    "NAME": "Rachel Bernier",
+    "AGE": 34121,
+    "GENDER": "Genderflux",
+    "id": "5"
+  },
+  {
+    "NAME": "Jaime Mills",
+    "AGE": 42805,
+    "GENDER": "Two-spirit",
+    "id": "6"
+  },
+  {
+    "NAME": "Betty Fritsch II",
+    "AGE": 70797,
+    "GENDER": "Transexual person",
+    "id": "7"
+  },
+  {
+    "NAME": "Nellie Kilback PhD",
+    "AGE": 19650,
+    "GENDER": "Gender variant",
+    "id": "8"
+  },
+  {
+    "NAME": "Dr. Nathan Jerde I",
+    "AGE": 73928,
+    "GENDER": "Intersex",
+    "id": "9"
+  },
+  {
+    "NAME": "Violet Zulauf",
+    "AGE": 52084,
+    "GENDER": "Cis",
+    "id": "10"
+  }
+]
+document.write("<table border=1>");
+	for(let i=0;i<Students.length;i++)
+    {
+			document.write("<tr>");
+			document.write("<td>"+Students[i].NAME+"</td>");
+			document.write("<td>"+Students[i].AGE+"</td>");
+			document.write("<td>"+Students[i].GENDER+"</td>");
+            document.write("<td>"+Students[i].id+"</td>");
+			document.write("</tr>");
+	}
+    </script>
+</body>
+</html>

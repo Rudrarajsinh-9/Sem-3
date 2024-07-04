@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <script>
+       let Products =
+        [
+  {
+    "NAME": "Stamm - Yost",
+    "PRICE": "532.00",
+    "MATIRIAL": "Practical Fresh Pants",
+    "id": "1"
+  },
+  {
+    "NAME": "Langworth Inc",
+    "PRICE": "817.00",
+    "MATIRIAL": "Ergonomic Cotton Car",
+    "id": "2"
+  },
+  {
+    "NAME": "Ward Inc",
+    "PRICE": "56.00",
+    "MATIRIAL": "Bespoke Wooden Pizza",
+    "id": "3"
+  },
+  {
+    "NAME": "Grant - Kiehn",
+    "PRICE": "73.00",
+    "MATIRIAL": "Handmade Cotton Hat",
+    "id": "4"
+  },
+  {
+    "NAME": "Towne Inc",
+    "PRICE": "589.00",
+    "MATIRIAL": "Small Soft Bacon",
+    "id": "5"
+  }
+]
+    document.write("<table border=1>");
+	for(let i=0;i<Products.length;i++){
+			document.write("<tr>");
+			document.write("<td>"+Products[i].NAME+"</td>");
+			document.write("<td>"+Products[i].PRICE+"</td>");
+			document.write("<td>"+Products[i].MATIRIAL+"</td>");
+            document.write("<td>"+Products[i].id+"</td>");
+			document.write("</tr>");
+	}
+    </script>
+</body>
+</html>
