@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array functions like push, pop, shift, unshift, splice, sort </title>
+</head>
+<body>
+    <script>
+
+arr=[8,9,3,4,5,6,7];
+
+
+
+// add num in last
+
+arr.push(10);
+console.log(arr);
+
+
+// remove num in last
+
+arr.pop();
+  console.log(arr);
+
+
+// remove num in first
+ arr.shift();
+  console.log(arr);
+
+
+// add num in first
+ arr.unshift(20);
+console.log(arr);
+
+
+// remove elements from array and give new array
+arr1 = arr.slice(0,5)
+ console.log(arr1);
+
+
+// remove elements from array and update array
+ arr.splice(2,3);
+console.log(arr);
+
+
+// give array in accending order
+arr.sort((a,b) =>a-b);
+console.log(arr);
+
+
+    </script>
+</body>
+</html>
