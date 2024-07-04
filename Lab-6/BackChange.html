@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6_1</title>
+    <style>
+        button {margin-left: 650px;
+                margin-top: 300px;};
+    </style>
+</head> 
+<body id="bg">
+	<button onclick="changeCol()">Click Me</button>
+<script type="text/javascript">
+	function changeCol()
+    {
+		col = document.getElementById('bg');
+		a =Math.random()*255;
+		b = Math.random()*255;
+		c = Math.random()*255;
+		d = Math.random();
+		col.style.backgroundColor = `rgba(${a},${b},${c},${d})`;
+	}
+</script>
+</body>
+</html>
